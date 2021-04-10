@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="7dp">
+
+        <TextView
+            android:padding="3dp"
+            android:textSize="30dp"
+            android:id="@+id/listItemPartName"
+            android:layout_width="fill_parent"
+            android:layout_height="47dp" />
+
+        <EditText
+            android:id="@+id/listItemAmountSpent"
+            android:inputType="number"
+            android:hint="$"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:text="spend"
+        android:id="@+id/button_add_spent"
+        android:layout_width="75dip"
+        android:layout_height="90dp" />
+
+    <Button
+        android:text="?"
+        android:id="@+id/btn_info"
+        android:layout_width="75dip"
+        android:layout_height="90dp" />
+
+</LinearLayout>

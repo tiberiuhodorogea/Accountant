@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:padding="1px"
+        android:textColor="#abcdef">
+
+        <EditText
+            android:id="@+id/etPartName"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:layout_width="247dp"
+            android:layout_height="70dp"
+            android:layout_margin="22dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fadingEdge="vertical"
+            android:inputType="textPersonName"
+            android:hint="name" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="77dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:onClick="onAddParticipant"
+            android:textSize="30dp"
+            android:text="+" />
+
+    </LinearLayout>
+
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:focusable="true">
+
+        </ListView>
+
+
+</LinearLayout>
