@@ -166,24 +166,26 @@ public class ParticipantListAdapter extends ArrayAdapter {
                 String give = "";
 
                 //give transactions
-                int total = 0;
+
                 for(int j = 0; j<participants.size();j++){
                     for(int i = 0; i < participants.size();++i)
                     {
                         double val = InsertParticipants.g_matrix[i][j];
                         if( val > 1 && j != i)
                         {
-                            //tranzactie de dat
+                            //trazactii de dat
                             give += "   " + participants.get(i).name + " " + String.format("%,d",(int)val).replace(",", " ") + " ---> " + InsertParticipants.g_participants.get(j).name + "\n";
-                            total += val;
                         }
                     }
 
                 }
 
+                int total = 0;
+                for (int i =0;i<participants.size();i++)
+                    total += participants.get(i).spent;
+
                 ret = give + "\n" + "\n" +
-                        "Total spent @" + InsertParticipants.event_name + " " + String.format("%,d",(int)InsertParticipants.g_matrix[InsertParticipants.g_participants
-                        .size()][InsertParticipants.g_participants.size()]).replace(",", " ")
+                        "Total spent @" + InsertParticipants.event_name + " " + String.format("%,d",(int)total).replace(",", " ")
                         + ".";
 
                 return ret;
