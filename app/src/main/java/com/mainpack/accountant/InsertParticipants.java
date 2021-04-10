@@ -10,6 +10,7 @@ import android.provider.Telephony;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -111,6 +112,9 @@ public class InsertParticipants extends ListActivity {
         Participant p = new Participant();
         p.name = partName;
         g_participants.add(p);
+
+        Button btn_add_part = (Button)view;
+        btn_add_part.setText("+(" + g_participants.size() + ")");
 
         adapter.notifyDataSetChanged();
         etPart.setText("");
