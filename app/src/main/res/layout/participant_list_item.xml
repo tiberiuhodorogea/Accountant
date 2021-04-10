@@ -27,6 +27,7 @@
     </LinearLayout>
 
     <Button
+        android:textSize="15dp"
         android:text="spend"
         android:id="@+id/button_add_spent"
         android:layout_width="75dip"
@@ -34,6 +35,7 @@
 
     <Button
         android:text="?"
+        android:textSize="15dp"
         android:id="@+id/btn_info"
         android:layout_width="75dip"
         android:layout_height="90dp" />

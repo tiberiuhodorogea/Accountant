@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -9,6 +10,8 @@
         android:layout_height="150dp"
         android:padding="1px"
         android:textColor="#abcdef">
+
+
 
         <EditText
             android:id="@+id/etPartName"
@@ -31,7 +34,7 @@
             android:layout_weight="1"
             android:onClick="onAddParticipant"
             android:textSize="30dp"
-            android:text="+" />
+            android:text="+"/>
 
     </LinearLayout>
 
